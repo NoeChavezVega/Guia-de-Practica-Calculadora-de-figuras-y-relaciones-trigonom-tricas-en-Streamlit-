@@ -18,7 +18,7 @@ elif figura == "Triangulo":
   area = 0.5 * base * altura
 elif figura == "Cuadrado":
   lado = st.number_input("Selecciona el lado", 0.0, 10.0, 5.0)
-area = lado**2
+
 st.write(f"El area del Cuadrado con lado {lado} es:{area:.2f}")
 perimetro = 4*lado
 st.write(f"El perimetro del Cuadrado con lado {lado} es:{perimetro:.2f}")
