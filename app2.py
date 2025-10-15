@@ -16,7 +16,7 @@ elif figura == "Triangulo":
   lado_a = st.number_input("selecciona lado_a", 0.0, 10.0, 5.0)
   lado_b = st.number_input("selecciona lado_b", 0.0, 10.0, 5.0)
   area = 0.5 * base * altura
-   st.write(f"El area del triangulo con base {base} es:{area:.2f}")
+  st.write(f"El area del triangulo con base {base} es:{area:.2f}")
  
 
 
