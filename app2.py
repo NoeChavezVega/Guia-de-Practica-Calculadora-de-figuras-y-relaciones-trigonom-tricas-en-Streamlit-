@@ -19,7 +19,7 @@ st.write(f"El perimetro del Cuadrado con lado {lado} es:{perimetro:.2f}")
 
 
 elif figura == "Triangulo":
-  base = st.slider("Selecciona la base",0.0,10.0,5.0)
+  base = st.number_input("Selecciona la base",0.0,10.0,5.0)
 altura = st.slider("Selecciona la altura",0.0,10.0,5.0)
 area= 0.5*base*altura
 
