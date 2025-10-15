@@ -2,6 +2,7 @@ import streamlit as st
 import math 
 st.title("Calculadora de figuras y Relaciones trigonometricas en Streamlit")
 st.sidebar.write("Noe Chavez Vega")
+st.sidebar.write("377347")
 st.title("Figuras geometricas")
 figura = st.selectbox("Seleccionar figura",["Cuadrado","Rectangulo","Triangulo","Circulo"])
 if figura == "Circulo":
