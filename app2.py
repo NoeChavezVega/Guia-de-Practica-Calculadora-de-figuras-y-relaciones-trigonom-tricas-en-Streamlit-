@@ -8,4 +8,4 @@ if figura == "Cuadrado":
 area = lado**2
 st.write(f"El area del Cuadrado con lado {lado} es:{area:.2f}")
 perimetro = 4*lado
-st.write(f"El perimetro del Cuadrado con lado {lado} es:{area:.2f}")
+st.write(f"El perimetro del Cuadrado con lado {lado} es:{perimetro:.2f}")
