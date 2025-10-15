@@ -4,6 +4,8 @@ st.title("Calculadora de figuras y Relaciones trigonometricas en Streamlit")
 st.title("Figuras geometricas")
 figura = st.selectbox("Seleccionar figura",["Cuadrado","Rectangulo","Triangulo","Circulo"])
 if figura == "Cuadrado":
-  lado = st.slider("selecciona el lado", 0.0, 10.0, 5.0)
+  lado = st.slider("Selecciona el lado", 0.0, 10.0, 5.0)
 area = lado**2
 st.write(f"El area del Cuadrado con lado {lado} es:{area:.2f}")
+perimetro = 4*lado
+st.write(f"El perimetro del Cuadrado con lado {lado} es:{area:.2f}")
