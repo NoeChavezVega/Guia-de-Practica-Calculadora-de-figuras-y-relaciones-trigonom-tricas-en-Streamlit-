@@ -25,7 +25,10 @@ elif figura == "Triangulo":
 elif figura == "Rectangulo":
   base = st.number_input("selecciona la base", 0.0, 20.0, 5.0)
   altura = st.number_input("selecciona la altura", 0.0, 20.0, 5.0)
-  
+  area = base * altura 
+  st.write(f"El area del rectangulo con base {base} y altura {altura} es:{area:.2f}")
+  perimetro = 2 * ( base + altura )
+  st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{area:.2f}")
  
 
 
