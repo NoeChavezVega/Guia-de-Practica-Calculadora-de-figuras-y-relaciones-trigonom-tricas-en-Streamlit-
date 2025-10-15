@@ -19,7 +19,7 @@ elif figura == "Triangulo":
   area = 0.5 * base * altura
   st.write(f"El area del triangulo con base {base} y altura {altura} es:{area:.2f}")
   perimetro = lado_a + lado_b + lado_c
-  st.write(f"El perimetro del triangulo con lado_a {lado_a} , lado_b {lado_b} , lado_c{lado_c} es:{area:.2f}")
+  st.write(f"El perimetro del triangulo con lado_a {lado_a} , lado_b {lado_b} , lado_c{lado_c} es:{perimetro:.2f}")
 
 elif figura == "Rectangulo":
   base = st.number_input("selecciona la base", 0.0, 20.0, 5.0)
