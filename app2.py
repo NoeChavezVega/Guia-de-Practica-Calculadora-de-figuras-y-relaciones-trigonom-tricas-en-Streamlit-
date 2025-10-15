@@ -37,7 +37,7 @@ elif figura == "Cuadrado":
   perimetro = 4 * lado
   st.write(f"El perimetro del rectangulo con lado {lado} es:{perimetro :.2f}")
 
-st.success()
+
   
 
 
