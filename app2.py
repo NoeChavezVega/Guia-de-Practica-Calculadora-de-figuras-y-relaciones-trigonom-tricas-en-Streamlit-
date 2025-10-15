@@ -36,6 +36,8 @@ elif figura == "Cuadrado":
   st.write(f"El area del cuadrado con lado {lado} es:{area:.2f}")
   perimetro = 4 * lado
   st.write(f"El perimetro del rectangulo con lado {lado} es:{perimetro :.2f}")
+
+st.success()
   
 
 
