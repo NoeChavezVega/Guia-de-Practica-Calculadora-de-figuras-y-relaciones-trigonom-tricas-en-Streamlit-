@@ -8,3 +8,4 @@ Perimetro = None
 if figura == "Cuadrado":
   radio = st.slider("selecciona el radio", 0.0, 10.0, 5.0)
 area = math.pi * radio**2
+st.write(f"El area del circulo con radio {radio} es:{area:.2f}")
