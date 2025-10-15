@@ -17,11 +17,10 @@ elif figura == "Triangulo":
   altura = st.number_input("selecciona la altura", 0.0, 20.0, 5.0)
   lado_a = st.number_input("selecciona lado_a", 0.0, 20.0, 5.0)
   lado_b = st.number_input("selecciona lado_b", 0.0, 20.0, 5.0)
-  
   area = 0.5 * base * altura
   st.write(f"El area del triangulo con base {base} y altura {altura} es:{area:.2f}")
   perimetro = base + lado_a + lado_b 
-  st.write(f"El perimetro del triangulo con lado_a {lado_a} , lado_b {lado_b} , lado_c{lado_c} es:{perimetro:.2f}")
+  st.write(f"El perimetro del triangulo con lado_a {lado_a} y lado_b {lado_b}  es:{perimetro:.2f}")
 
 elif figura == "Rectangulo":
   base = st.number_input("selecciona la base", 0.0, 20.0, 5.0)
