@@ -11,7 +11,7 @@ if figura == "Circulo":
   st.write(f"El perimetro del circulo con radio {radio} es:{area:.2f}")
   
 elif figura == "Cuadrado":
-  lado = st.slider("Selecciona el lado", 0.0, 10.0, 5.0)
+  lado = st.number_input("Selecciona el lado", 0.0, 10.0, 5.0)
 area = lado**2
 st.write(f"El area del Cuadrado con lado {lado} es:{area:.2f}")
 perimetro = 4*lado
