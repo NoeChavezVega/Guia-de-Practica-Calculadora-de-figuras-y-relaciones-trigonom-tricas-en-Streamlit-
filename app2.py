@@ -79,7 +79,7 @@ elif figura == "Cuadrado":
   st.pyplot(fig)
 
 st.title("Funciones Trigonométricas")
-x_min, x_max = st.slider("Rango de x (en radianes)", 0.0, 10.0, (0.0, 2*np.pi))
+x_min, x_max = st.slider("Rango de x (radianes)", 0.0, 10.0, (0.0, 2*np.pi))
 x = np.linspace(x_min, x_max, 300)
 
 
