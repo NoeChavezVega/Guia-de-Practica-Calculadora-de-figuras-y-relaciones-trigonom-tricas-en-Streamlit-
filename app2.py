@@ -85,6 +85,25 @@ elif figura == "🟦Cuadrado🟦":
   ax.set_title("Cuadrado")
   st.pyplot(fig)
 
+st.title(" Relaciones Trigonométricas")
+angulo = st.slider("Selecciona un ángulo (en grados)", 0, 360, 45)
+radianes = math.radians(angulo)
+
+seno = math.sin(radianes)
+coseno = math.cos(radianes)
+tangente = math.tan(radianes) if coseno != 0 else float('inf')
+
+st.metric("Seno", f"{seno:.3f}")
+st.metric("Coseno", f"{coseno:.3f}")
+st.metric("Tangente", f"{tangente:.3f}" if coseno != 0 else "Infinito")
+
+x = np.linspace(0, 2 * np.pi, 400)
+y_sin = np.sin(x)
+y_cos = np.cos(x)
+y_tan = np.tan(x)
+
+
+
 
 
 
