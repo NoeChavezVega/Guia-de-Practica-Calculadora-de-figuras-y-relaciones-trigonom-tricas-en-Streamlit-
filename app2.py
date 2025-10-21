@@ -13,13 +13,13 @@ if figura == "Circulo":
   perimetro = 2*math.pi*radio
   st.write(f"El perimetro del circulo con radio {radio} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
-  fig, ax = plt.subplots()
-  circle = plt.Circle((0, 0), radio, color=color, fill=False, linewidth=2)
-  ax.add_artist(circle)
-  ax.set_xlim(-radio*1.5, radio*1.5)
-  ax.set_ylim(-radio*1.5, radio*1.5)
-  ax.set_aspect('equal')
-  st.pyplot(fig)
+   fig, ax = plt.subplots()  # <-- Esto ahora funciona porque importaste matplotlib.pyplot
+    circle = plt.Circle((0, 0), radio, color=color, fill=False, linewidth=2)
+    ax.add_artist(circle)
+    ax.set_xlim(-radio*1.5, radio*1.5)
+    ax.set_ylim(-radio*1.5, radio*1.5)
+    ax.set_aspect('equal')
+    st.pyplot(fig)
   st.success(f"Cálculos y visualización realizados correctamente para: {figura}")
  
   
