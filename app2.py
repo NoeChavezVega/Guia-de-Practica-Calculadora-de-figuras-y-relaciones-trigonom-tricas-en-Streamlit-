@@ -37,7 +37,6 @@ elif figura == "Triangulo":
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
   fig, ax = plt.subplots()
   triangle = plt.Polygon(((0,0),(base,0),(base/2, altura)), closed=True, color=color, fill=False)
-  
   ax.add_artist(triangle)
   ax.set_xlim(-1, base + 1)
   ax.set_ylim(-1, altura + 1)
@@ -52,6 +51,7 @@ elif figura == "Rectangulo":
   perimetro = 2 * (base + altura)
   st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
+  
 
 elif figura == "Cuadrado":
   lado = st.number_input("Seleccione la base", 0.0, 20.0, 5.0)
