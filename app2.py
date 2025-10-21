@@ -81,6 +81,23 @@ elif figura == "Cuadrado":
 st.title("Funciones Trigonométricas")
 x_min, x_max = st.slider("Rango de x (radianes)", 0.0, 10.0, (0.0, 2*np.pi))
 x = np.linspace(x_min, x_max, 300)
+amp = st.slider("Amplitud", 0.1, 2.0, 1.0)
+func = st.selectbox("Selecciona función trigonométrica", ["sin(x)", "cos(x)", "tan(x)"])
+fig2, ax2 = plt.subplots()
+if func == "sin(x)":
+    ax2.plot(x, amp * np.sin(x), label=f"{amp}*sin(x)")
+elif func == "cos(x)":
+    ax2.plot(x, amp * np.cos(x), label=f"{amp}*cos(x)")
+elif func == "tan(x)":
+    ax2.plot(x, amp * np.tan(x), label=f"{amp}*tan(x)")
+    ax2.set_ylim(-10, 10)  # limitar para tan(x) y evitar valores enormes
+
+ax2.set_xlabel("x (radianes)")
+ax2.set_ylabel("y")
+ax2.set_title(f"Función {func}")
+ax2.grid(True)
+ax2.legend()
+st.pyplot(fig2)
 
 
 
