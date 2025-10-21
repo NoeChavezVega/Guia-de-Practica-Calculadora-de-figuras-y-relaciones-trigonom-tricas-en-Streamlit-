@@ -2,11 +2,11 @@ import streamlit as st
 import math 
 import matplotlib.pyplot as plt
 import numpy as np 
-st.title("Calculadora de figuras y Relaciones trigonometricas en Streamlit")
+st.title("📐Calculadora de figuras y Relaciones trigonometricas en Streamlit📐")
 st.sidebar.write("Noe Chavez Vega")
 st.sidebar.write("377347")
 st.title("Figuras geometricas")
-figura = st.selectbox("Seleccionar figura",["Cuadrado","Rectangulo","Triangulo","Circulo"])
+figura = st.selectbox("Seleccionar figura",["🟦Cuadrado🟦","⬛Rectangulo⬛","🔺Triangulo🔺","⚪Circulo⚪"])
 color = st.color_picker("Selecciona el color de la figura", "#FF0000")
 if figura == "Circulo":
   radio = st.number_input("selecciona el radio", 0.0, 20.0, 5.0)
@@ -81,7 +81,7 @@ elif figura == "Cuadrado":
 st.title("Funciones Trigonométricas")
 x_min, x_max = st.slider("Rango de x (radianes)", 0.0, 10.0, (0.0, 2*np.pi))
 x = np.linspace(x_min, x_max, 300)
-amp = st.slider("Amplitud", 0.1, 2.0, 1.0)
+amp = st.slider("📈Amplitud📈", 0.1, 2.0, 1.0)
 func = st.selectbox("Selecciona función trigonométrica", ["sin(x)", "cos(x)", "tan(x)"])
 fig2, ax2 = plt.subplots()
 if func == "sin(x)":
