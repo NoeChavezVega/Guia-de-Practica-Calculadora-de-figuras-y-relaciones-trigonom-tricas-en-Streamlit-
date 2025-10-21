@@ -24,6 +24,7 @@ elif figura == "Triangulo":
   st.write(f"El perimetro del triangulo con lado_a {lado_a} y lado_b {lado_b}  es:{perimetro:.2f}")
 st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
 
+elif
 
 
 
