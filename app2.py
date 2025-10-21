@@ -81,7 +81,7 @@ elif figura == "Cuadrado":
 st.title("Funciones Trigonométricas")
 x = np.linspace(0, 2*np.pi, 300)
 amp = st.slider("Amplitud", 0.1, 2.0, 1.0)
-st.write("Funci´on seno:")
+st.write("Funcion seno:")
 st.line_chart(amp * np.sin(x))
 
 
