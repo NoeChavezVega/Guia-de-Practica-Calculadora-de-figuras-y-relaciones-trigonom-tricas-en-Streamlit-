@@ -11,7 +11,7 @@ if figura == "Circulo":
   st.write(f"El area del circulo con radio {radio} es:{area:.2f}")
   perimetro = 2*math.pi*radio
   st.write(f"El perimetro del circulo con radio {radio} es:{perimetro:.2f}")
-st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
+  st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
 
 elif figura == "Triangulo":
   base = st.number_input("selecciona la base", 0.0, 20.0, 5.0)
