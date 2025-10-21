@@ -8,7 +8,7 @@ st.sidebar.write("377347")
 st.title("Figuras geometricas")
 figura = st.selectbox("Seleccionar figura",["🟦Cuadrado🟦","⬛Rectangulo⬛","🔺Triangulo🔺","⚪Circulo⚪"])
 color = st.color_picker("Selecciona el color de la figura")
-if figura == "Circulo":
+if figura == "⚪Circulo⚪":
   radio = st.number_input("selecciona el radio", 0.0, 20.0, 5.0)
   area = math.pi * radio**2
   st.write(f"El area del circulo con radio {radio} es:{area:.2f}")
@@ -20,7 +20,7 @@ if figura == "Circulo":
   
   
 
-elif figura == "Triangulo":
+elif figura == "🔺Triangulo🔺":
   base = st.number_input("selecciona la base", 0.0, 20.0, 5.0)
   altura = st.number_input("selecciona la altura", 0.0, 20.0, 5.0)
   lado_a = st.number_input("selecciona lado_a", 0.0, 20.0, 5.0)
@@ -31,7 +31,7 @@ elif figura == "Triangulo":
   st.write(f"El perimetro del triangulo con lado_a {lado_a} y lado_b {lado_b}  es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
 
-elif figura == "Rectangulo":
+elif figura == "⬛Rectangulo⬛":
   base = st.number_input("Seleccione la base", 0.0, 20.0, 5.0)
   altura = st.number_input("Seleccione la altura", 0.0, 20.0, 5.0)
   area = base * altura
@@ -44,7 +44,7 @@ elif figura == "Rectangulo":
   
   
 
-elif figura == "Cuadrado":
+elif figura == "🟦Cuadrado🟦":
   lado = st.number_input("Seleccione la base", 0.0, 20.0, 5.0)
   area = lado**2
   st.write(f"El area del cuadrado con lado {lado} es:{area:.2f}")
