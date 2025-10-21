@@ -18,7 +18,7 @@ if figura == "Circulo":
   circle = plt.Circle((0,0), radio, color=color, fill=False, linewidth=2)
   ax.add_artist(circle)
   ax.set_aspect('equal')
-  st.pyplot(fig))
+  st.pyplot(fig)
   
   
 
