@@ -15,13 +15,7 @@ if figura == "Circulo":
   st.write(f"El perimetro del circulo con radio {radio} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
   st.success(f"Cálculos y visualización realizados correctamente para: {figura}")
-  fig, ax = plt.subplots()
-  circle = plt.Circle((0,0), radio, color=color, fill=False)
-  ax.add_artist(circle)
-  ax.set_xlim(-radio*1.5, radio*1.5)
-  ax.set_ylim(-radio*1.5, radio*1.5)
-  ax.set_aspect('equal')
-  st.pyplot(fig)
+  
   
   
 
@@ -35,13 +29,6 @@ elif figura == "Triangulo":
   perimetro = base + lado_a + lado_b 
   st.write(f"El perimetro del triangulo con lado_a {lado_a} y lado_b {lado_b}  es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
-  fig, ax = plt.subplots()
-  triangle = plt.Polygon(((0,0),(base,0),(base/2, altura)), closed=True, color=color, fill=False)
-  ax.add_artist(triangle)
-  ax.set_xlim(-1, base + 1)
-  ax.set_ylim(-1, altura + 1)
-  ax.set_aspect('equal')
-  st.pyplot(fig)
 
 elif figura == "Rectangulo":
   base = st.number_input("Seleccione la base", 0.0, 20.0, 5.0)
@@ -51,13 +38,7 @@ elif figura == "Rectangulo":
   perimetro = 2 * (base + altura)
   st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
-  fig, ax = plt.subplots()
-  rectangle = plt.Rectangle((0,0), base, altura,  color=color, fill=False)
-  ax.add_artist(rectangle)
-  ax.set_xlim(-1, base + 1)
-  ax.set_ylim(-1, altura + 1)
-  ax.set_aspect('equal')
-  st.pyplot(fig)
+
 
   
   
@@ -69,13 +50,7 @@ elif figura == "Cuadrado":
   perimetro = 4*lado
   st.write(f"El perimetro del cuadrado con lado {lado} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
-  fig, ax = plt.subplots()
-  square = plt.Rectangle((0,0), lado, lado,  color=color, fill=False)
-  ax.add_artist(square)
-  ax.set_xlim(-1, lado + 1)
-  ax.set_ylim(-1, lado + 1)
-  ax.set_aspect('equal')
-  st.pyplot(fig)
+
 
 
 
