@@ -16,6 +16,14 @@ if figura == "⚪Circulo⚪":
   st.write(f"El perimetro del circulo con radio {radio} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
   st.success(f"Cálculos y visualización realizados correctamente para: {figura}")
+  fig, ax = plt.subplots()
+    circle = plt.Circle((0, 0), radio, edgecolor=color, fill=False, linewidth=2)
+    ax.add_artist(circle)
+    ax.set_xlim(-radio * 1.5, radio * 1.5)
+    ax.set_ylim(-radio * 1.5, radio * 1.5)
+    ax.set_aspect("equal")
+    ax.set_title("Círculo")
+    st.pyplot(fig)
   
   
   
