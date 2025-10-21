@@ -30,7 +30,7 @@ elif figura == "Rectangulo":
   area = base * altura 
   st.write(f"El area del rectangulo con base {base} y altura {altura} es:{area:.2f}")
   perimetro = 2 * ( base + altura )
-  st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{area:.2f}")
+  st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{perimetro:.2f}")
 st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
 
 elif figura == "Cuadrado":
