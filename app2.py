@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 st.set_page_config(layout="centered", page_title="Calculadora de Figuras y Trigonometría")
-st.title("Calculadora de Figuras y Relaciones Trigonométricas en Streamlit")
+st.title("Calculadora de Figuras y Relaciones Trigonométricas")
 st.sidebar.write("**Autor:** Noe Chavez Vega")
 st.sidebar.write("**Matrícula:** 377347")
 
@@ -79,7 +79,9 @@ elif figura == "Cuadrado":
 
     fig, ax = plt.subplots()
     sq = plt.Rectangle((0, 0), lado, lado, fill=False, linewidth=3, edgecolor=color)
-    ax.add_patch(s_
+    ax.add_patch(sq)
+    ax.set_xlim(-1, lado * 1.1)
+
 
 
 
