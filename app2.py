@@ -1,5 +1,6 @@
 import streamlit as st
 import math 
+import matplotlib,pyplot as plt
 
 st.title("Calculadora de figuras y Relaciones trigonométricas en Streamlit")
 st.sidebar.write("Noe Chavez Vega")
@@ -7,7 +8,7 @@ st.sidebar.write("377347")
 
 st.title("Figuras geométricas")
 figura = st.selectbox("Seleccionar figura", ["Cuadrado", "Rectángulo", "Triángulo", "Círculo"])
-
+color = st.color_picker("Elige un color para la figura")
 if figura == "Círculo":
     radio = st.number_input("Selecciona el radio", 0.0, 20.0, 5.0)
     area = math.pi * radio**2
