@@ -13,10 +13,10 @@ if figura == "Circulo":
   st.write(f"El perimetro del circulo con radio {radio} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
   fig, ax = plt.subplots()
-  circle = plt.Circle((0,0), radio, color=color, fill=False)
-  ax.add_artist(circle)
-  ax.set.aspect('equal')
-  st.pyplot(fig)
+ circle = plt.Circle((0, 0), radio, color=color, fill=False)
+ ax.add_artist(circle)
+ ax.set_aspect('equal')
+ st.pyplot(fig)
   
 
 elif figura == "Triangulo":
