@@ -78,7 +78,7 @@ elif figura == "Cuadrado":
   ax.set_aspect('equal')
   st.pyplot(fig)
 
-st.header("Funciones Trigonométricas")
+st.title("Funciones Trigonométricas")
 
 
 
