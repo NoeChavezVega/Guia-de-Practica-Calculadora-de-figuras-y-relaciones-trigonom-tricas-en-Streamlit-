@@ -3,6 +3,7 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Configuración de la página
 st.set_page_config(layout="centered", page_title="Calculadora de Figuras y Trigonometría")
 st.title("Calculadora de Figuras y Relaciones Trigonométricas")
 st.sidebar.write("**Autor:** Noe Chavez Vega")
@@ -23,6 +24,7 @@ if figura == "Circulo":
     st.metric("Área", f"{area:.2f}")
     st.metric("Perímetro", f"{perimetro:.2f}")
 
+    # Visualización
     fig, ax = plt.subplots()
     circle = plt.Circle((0, 0), radio, color=color, fill=False, linewidth=3)
     ax.add_artist(circle)
@@ -43,6 +45,7 @@ elif figura == "Triangulo":
     st.metric("Área", f"{area:.2f}")
     st.metric("Perímetro", f"{perimetro:.2f}")
 
+    # Visualización
     fig, ax = plt.subplots()
     xs = [0, base / 2, base, 0]
     ys = [0, altura, 0, 0]
@@ -60,6 +63,7 @@ elif figura == "Rectangulo":
     st.metric("Área", f"{area:.2f}")
     st.metric("Perímetro", f"{perimetro:.2f}")
 
+    # Visualización
     fig, ax = plt.subplots()
     rect = plt.Rectangle((0, 0), base, altura, fill=False, linewidth=3, edgecolor=color)
     ax.add_patch(rect)
@@ -77,10 +81,55 @@ elif figura == "Cuadrado":
     st.metric("Área", f"{area:.2f}")
     st.metric("Perímetro", f"{perimetro:.2f}")
 
+    # Visualización
     fig, ax = plt.subplots()
     sq = plt.Rectangle((0, 0), lado, lado, fill=False, linewidth=3, edgecolor=color)
     ax.add_patch(sq)
     ax.set_xlim(-1, lado * 1.1)
+    ax.set_ylim(-1, lado * 1.1)
+    ax.set_aspect("equal")
+    ax.set_title("Cuadrado")
+    st.pyplot(fig)
+    plt.close(fig)
+
+st.success(f"Cálculos y visualización realizados para la figura: {figura}")
+
+# ----------------------------
+# PARTE 3: RELACIONES TRIGONOMÉTRICAS
+# ----------------------------
+st.header("Parte 3 — Relaciones Trigonométricas")
+
+angulo = st.slider("Selecciona un ángulo (en grados)", 0, 360, 45)
+radianes = math.radians(angulo)
+
+seno = math.sin(radianes)
+coseno = math.cos(radianes)
+tangente = math.tan(radianes) if coseno != 0 else float('inf')
+
+st.metric("Seno", f"{seno:.3f}")
+st.metric("Coseno", f"{coseno:.3f}")
+st.metric("Tangente", f"{tangente:.3f}" if coseno != 0 else "Infinito")
+
+# Graficar funciones trigonométricas
+x = np.linspace(0, 2 * np.pi, 400)
+y_sin = np.sin(x)
+y_cos = np.cos(x)
+y_tan = np.tan(x)
+
+fig, ax = plt.subplots()
+ax.plot(x, y_sin, label="Seno", color="#FF5733")
+ax.plot(x, y_cos, label="Coseno", color="#33C1FF")
+ax.plot(x, y_tan, label="Tangente", color="#4CAF50", linestyle="--")
+ax.set_xlim(0, 2 * np.pi)
+ax.set_ylim(-2, 2)
+ax.set_title("Funciones Trigonométricas")
+ax.legend()
+ax.grid(True)
+st.pyplot(fig)
+plt.close(fig)
+
+st.success("Cálculos y gráficas trigonométricas generadas correctamente.")
+
 
 
 
