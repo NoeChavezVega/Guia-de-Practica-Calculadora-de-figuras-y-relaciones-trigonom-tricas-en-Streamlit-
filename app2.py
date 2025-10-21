@@ -7,7 +7,7 @@ st.sidebar.write("Noe Chavez Vega")
 st.sidebar.write("377347")
 st.title("Figuras geometricas")
 figura = st.selectbox("Seleccionar figura",["🟦Cuadrado🟦","⬛Rectangulo⬛","🔺Triangulo🔺","⚪Circulo⚪"])
-color = st.color_picker("Selecciona el color de la figura", "#FF0000")
+color = st.color_picker("Selecciona el color de la figura")
 if figura == "Circulo":
   radio = st.number_input("selecciona el radio", 0.0, 20.0, 5.0)
   area = math.pi * radio**2
