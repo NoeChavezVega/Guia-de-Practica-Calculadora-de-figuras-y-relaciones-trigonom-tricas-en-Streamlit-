@@ -38,6 +38,14 @@ elif figura == "🔺Triangulo🔺":
   perimetro = base + lado_a + lado_b 
   st.write(f"El perimetro del triangulo con lado_a {lado_a} y lado_b {lado_b}  es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
+  fig, ax = plt.subplots()
+  triangle = plt.Polygon(((0, 0), (base, 0), (base / 2, altura)), closed=True, color=color, fill=False)
+  ax.add_artist(triangle)
+  ax.set_xlim(-1, base + 1)
+  ax.set_ylim(-1, altura + 1)
+  ax.set_aspect("equal")
+  ax.set_title("Triángulo")
+  st.pyplot(fig)
 
 elif figura == "⬛Rectangulo⬛":
   base = st.number_input("Seleccione la base", 0.0, 20.0, 5.0)
