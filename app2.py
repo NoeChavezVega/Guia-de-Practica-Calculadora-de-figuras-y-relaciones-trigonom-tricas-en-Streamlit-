@@ -24,6 +24,7 @@ elif figura == "Triangulo":
   st.write(f"El perimetro del triangulo con lado_a {lado_a} y lado_b {lado_b}  es:{perimetro:.2f}")
 st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
 
+
 elif figura == "Rectangulo":
   base = st.number_input("selecciona la base", 0.0, 20.0, 5.0)
   altura = st.number_input("selecciona la altura", 0.0, 20.0, 5.0)
@@ -32,6 +33,7 @@ elif figura == "Rectangulo":
   perimetro = 2 * ( base + altura )
   st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{perimetro:.2f}")
 st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
+
 
 elif figura == "Cuadrado":
   lado = st.number_input("selecciona el lado", 0.0, 20.0, 5.0)
