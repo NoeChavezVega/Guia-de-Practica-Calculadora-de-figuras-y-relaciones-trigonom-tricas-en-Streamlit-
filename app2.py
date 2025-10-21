@@ -79,11 +79,8 @@ elif figura == "Cuadrado":
   st.pyplot(fig)
 
 st.title("Funciones Trigonométricas")
-x = np.linspace(0, 2*np.pi, 300)
-amp = st.slider("Amplitud", 0.1, 2.0, 1.0)
-st.write("Funcion seno:")
-st.line_chart(amp * np.sin(x))
-
+x_min, x_max = st.slider("Rango de x (en radianes)", 0.0, 10.0, (0.0, 2*np.pi))
+x = np.linspace(x_min, x_max, 300)
 
 
 
