@@ -1,6 +1,6 @@
 import streamlit as st
 import math 
-import matplotlib.pyblot as plt
+import matplotlib.pyplot as plt
 st.title("Calculadora de figuras y Relaciones trigonometricas en Streamlit")
 st.sidebar.write("Noe Chavez Vega")
 st.sidebar.write("377347")
