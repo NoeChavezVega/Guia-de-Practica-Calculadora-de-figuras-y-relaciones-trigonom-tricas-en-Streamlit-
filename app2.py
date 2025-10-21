@@ -86,36 +86,10 @@ elif figura == "🟦Cuadrado🟦":
   st.pyplot(fig)
 
 st.title(" Relaciones Trigonométricas")
-angulo = st.slider("Selecciona un ángulo (en grados)", 0, 360, 45)
-radianes = math.radians(angulo)
-
-seno = math.sin(radianes)
-coseno = math.cos(radianes)
-tangente = math.tan(radianes) if coseno != 0 else float('inf')
-
-st.metric("Seno", f"{seno:.3f}")
-st.metric("Coseno", f"{coseno:.3f}")
-st.metric("Tangente", f"{tangente:.3f}" if coseno != 0 else "Infinito")
-
-# Graficar funciones trigonométricas
-x = np.linspace(0, 2 * np.pi, 400)
-y_sin = np.sin(x)
-y_cos = np.cos(x)
-y_tan = np.tan(x)
-
-fig, ax = plt.subplots()
-ax.plot(x, y_sin, label="Seno", color="#FF5733")
-ax.plot(x, y_cos, label="Coseno", color="#33C1FF")
-ax.plot(x, y_tan, label="Tangente", color="#4CAF50", linestyle="--")
-ax.set_xlim(0, 2 * np.pi)
-ax.set_ylim(-2, 2)
-ax.set_title("Funciones Trigonométricas")
-ax.legend()
-ax.grid(True)
-st.pyplot(fig)
-plt.close(fig))
-
-
+ x = np.linspace(0, 2*np.pi, 300)
+ amp = st.slider("Amplitud", 0.1, 2.0, 1.0)
+ st.write("Funci´on seno:")
+ st.line_chart(amp * np.sin(x))
 
 
 
