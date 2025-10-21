@@ -3,8 +3,9 @@ import math
 import numpy as np 
 import matplotlib.pyplot as plt
 st.title("📐Calculadora de figuras y Relaciones trigonometricas en Streamlit📐")
-st.sidebar.write("Noe Chavez Vega")
-st.sidebar.write("377347")
+st.sidebar.write("Nombre:Noe Chavez Vega")
+st.sidebar.write("Matricula:377347")
+st.sidebar.write("Grupo:3L")
 st.title("Figuras geometricas")
 figura = st.selectbox("Seleccionar figura",["🟦Cuadrado🟦","⬛Rectangulo⬛","🔺Triangulo🔺","⚪Circulo⚪"])
 color = st.color_picker("Selecciona el color de la figura")
