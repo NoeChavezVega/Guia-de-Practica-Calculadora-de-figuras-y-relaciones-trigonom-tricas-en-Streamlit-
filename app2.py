@@ -52,7 +52,7 @@ elif figura == "Rectangulo":
   st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
   fig, ax = plt.subplots()
-  rectangle = plt.Rectangle(((0,0), base, altura,  color=color, fill=False)
+  rectangle = plt.Rectangle((0,0), base, altura,  color=color, fill=False)
   ax.add_artist(rectangle)
   ax.set_xlim(-1, base + 1)
   ax.set_ylim(-1, altura + 1)
