@@ -86,10 +86,20 @@ elif figura == "🟦Cuadrado🟦":
   st.pyplot(fig)
 
 st.title(" Relaciones Trigonométricas")
-x = np.linspace(0, 2*np.pi, 300)
+rango = st.slider("Rango máximo (rad)", 0.1, 2*math.pi, 2*math.pi)
 amp = st.slider("Amplitud", 0.1, 2.0, 1.0)
-st.write("Funci´on seno:")
+    
+x = np.linspace(0, rango, 300)
+st.subheader("Función Seno")
 st.line_chart(amp * np.sin(x))
+    
+st.subheader("Función Coseno")
+st.line_chart(amp * np.cos(x))
+    
+st.subheader("Función Tangente")
+y_tan = np.tan(x)
+y_tan[np.abs(y_tan) > 10] = np.nan
+st.line_chart(amp * y_tan)
 
 
 
