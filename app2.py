@@ -90,7 +90,7 @@ elif func == "cos(x)":
     ax2.plot(x, amp * np.cos(x), label=f"{amp}*cos(x)")
 elif func == "tan(x)":
     ax2.plot(x, amp * np.tan(x), label=f"{amp}*tan(x)")
-    ax2.set_ylim(-10, 10)  # limitar para tan(x) y evitar valores enormes
+    ax2.set_ylim(-10, 10)  
 
 ax2.set_xlabel("x (radianes)")
 ax2.set_ylabel("y")
