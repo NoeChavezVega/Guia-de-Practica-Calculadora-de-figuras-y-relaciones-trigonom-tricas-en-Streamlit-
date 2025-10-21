@@ -24,6 +24,7 @@ if figura == "⚪Circulo⚪":
   ax.set_aspect('equal')
   st.pyplot(fig)
   
+  
    
   
   
@@ -75,6 +76,14 @@ elif figura == "🟦Cuadrado🟦":
   perimetro = 4*lado
   st.write(f"El perimetro del cuadrado con lado {lado} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
+  fig, ax = plt.subplots()
+  square = plt.Rectangle((0, 0), lado, lado, edgecolor=color)
+  ax.add_artist(square)
+  ax.set_xlim(-1, lado + 1)
+  ax.set_ylim(-1, lado + 1)
+  ax.set_aspect("equal")
+  ax.set_title("Cuadrado")
+  st.pyplot(fig)
 
 
 
