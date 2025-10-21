@@ -33,6 +33,14 @@ elif figura == "Rectangulo":
   st.write(f"El perimetro del rectangulo con base {base} y altura {altura} es:{perimetro:.2f}")
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
 
+elif figura == "Cuadrado":
+  lado = st.number_input("Seleccione la base", 0.0, 20.0, 5.0)
+  area = lado**2
+  st.write(f"El area del cuadrado con lado {lado} es:{area:.2f}")
+  perimetro = 4*lado
+  st.write(f"El perimetro del cuadrado con lado {lado} es:{perimetro:.2f}")
+  st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
+
 
 
 
