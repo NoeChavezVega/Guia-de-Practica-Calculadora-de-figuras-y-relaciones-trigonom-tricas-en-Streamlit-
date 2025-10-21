@@ -16,7 +16,7 @@ if figura == "Circulo":
   st.success(f"Calculos realizados correctamente para la figura seleccionada:{figura}")
   st.success(f"Cálculos y visualización realizados correctamente para: {figura}")
   fig, ax = plt.subplots()
-  circle = plt.Circle((0,0), radio, color=color, fill=False, linewidth=2)
+  circle = plt.Circle((0,0), radio, color=color, fill=False)
   ax.add_artist(circle)
   ax.set_aspect('equal')
   st.pyplot(fig)
